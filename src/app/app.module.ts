@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { MatFormioModule } from 'angular-material-formio';
 import 'hammerjs';
 import './CustomComponent';
+import { MaterialHeaderComponent } from './CustomComponent';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaterialHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -16,6 +18,7 @@ import './CustomComponent';
     MatFormioModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [MaterialHeaderComponent]
 })
 export class AppModule { }

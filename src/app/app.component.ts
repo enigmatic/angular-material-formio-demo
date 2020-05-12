@@ -9,6 +9,10 @@ export class AppComponent {
   form: any = {
     components: [
       {
+        type: 'dropzone',
+        label: 'Custom Entry'
+      },
+      {
         type: 'textfield',
         label: 'First Name',
         key: 'firstName',
